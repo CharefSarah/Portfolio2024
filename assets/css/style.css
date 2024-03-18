@@ -24,9 +24,17 @@ body {
 /* --------------------------------------------------------------------- */
 /* -----------------        ROOTS & WEBKITS         -------------------- */
 /* --------------------------------------------------------------------- */
+:root {
+
+  --clr_light: #ffffff;
+  --clr_mid: #B3B3B3;
+  --clr_mid1: #6d6d6d;
+  --clr_mid2: #0f0f0f;
+  --clr_dark: #0a0a0a;
+}
 
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
 
     --clr_light: #ffffff;
@@ -34,11 +42,9 @@ body {
     --clr_mid1: #6d6d6d;
     --clr_mid2: #0f0f0f;
     --clr_dark: #0a0a0a;
-    --color_accent: #123fe2;
-    --color_accent2: #002dd2;
   }
-
 }
+
 
 :root {
   --gap: 30px;
@@ -427,7 +433,6 @@ header {
   align-items: start;
   font-family: "Safiro";
   text-align: left;
-  background-color: var(--clr_light);
   margin-bottom: 4rem;
   border-bottom: 1.6px solid #e1e1e1;
 }
@@ -823,3 +828,112 @@ details[open] summary {
 
 
 }
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--clr_dark);
+    color: var(--clr_light);
+  }
+
+  .btn .nav__link {
+    color: var(--clr_dark);
+
+
+  }
+
+  .btn {
+
+    background-color: var(--clr_light);
+
+  }
+
+  .btn .nav__link {
+    color: var(--clr_dark);
+  }
+
+  nav h1,
+  nav a {
+    font-size: 1rem;
+    color: var(--clr_mid1);
+
+  }
+
+  nav h1>a {
+    color: var(--clr_light);
+  }
+
+  header {
+    .title {
+      color: var(--clr_light);
+
+
+    }
+
+
+  }
+
+  .small__title {
+    margin-bottom: 1.5rem;
+    color: var(--clr_light);
+    width: 100%;
+
+  }
+
+  .split__lines {
+    color: var(--clr_light);
+  }
+
+  .line__mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--clr_dark);
+    opacity: 0.80;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+
+
+  }
+
+  .text__reveal {
+    border-bottom: 1.6px solid #121212 !important;
+  }
+
+  .service__little__title,
+  .small__title {
+    color: var(--clr_mid1);
+  }
+
+  details {
+
+    color: var(--clr_light);
+
+  }
+
+  summary {
+
+
+    border-bottom: 1.6px solid #121212;
+
+
+  }
+
+  details[open] summary {
+
+    border-bottom: 1px solid var(--clr_mid);
+  }
+
+  summary>span {
+
+    color: var(--clr_mid1);
+
+  }
+
+}
+
+
