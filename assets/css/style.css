@@ -905,7 +905,7 @@ details[open] summary {
   }
 
   .service__little__title,
-  .small__title {
+  .small__title, .projet__little__title {
     color: var(--clr_mid1);
   }
 
