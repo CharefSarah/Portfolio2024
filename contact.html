@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <head>
+        <title>Contact | Sarah Charef | SRHC DESIGN | Webdesigner Freelance</title>
+        <meta name="description"
+            content="SRHC DESIGN est un studio créatif spécialisée en conception web, UI/UX graphisme, identité visuelle et développement. Transformez vos idées en réalité avec notre expertise créative et technique.">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/images/ico.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+
+<body data-barba="wrapper">
+<div class="transition"></div>
+<main data-barba="container" data-namespace="contact">
+    <div class="container">
+        <nav>
+            <div class="nav__elem">
+                <h1><a href="index.html"> Sarah Charef</a></h1>
+            </div>
+            <div class="nav__elem nav__elem__right">
+                <ul>
+
+                    <li>
+
+                        <a href="" class="nav__link">
+                            <span class="nav__link__mask">
+                                <div class="nav__link__container">
+                                    <span class="nav__link__1 nav__title">Services</span>
+                                    <span class="nav__link__2 nav__title">Servives</span>
+                                </div>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">
+                            <span class="nav__link__mask">
+                                <div class="nav__link__container">
+                                    <span class="nav__link__1 nav__title">Process</span>
+                                    <span class="nav__link__2 nav__title">Process</span>
+                                </div>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__link">
+                            <span class="nav__link__mask">
+                                <div class="nav__link__container">
+                                    <span class="nav__link__1 nav__title">Prix</span>
+                                    <span class="nav__link__2 nav__title">Prix</span>
+                                </div>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="playground.html" class="nav__link">
+                            <span class="nav__link__mask">
+                                <div class="nav__link__container">
+                                    <span class="nav__link__1 nav__title">ENG</span>
+                                    <span class="nav__link__2 nav__title">ENG</span>
+                                </div>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn">
+                    <a href="contact.html" class="nav__link">
+                        Discutons ensemble !
+                        </span>
+                    </a>
+                    <span class="fillspan"></span></button>
+            </div>
+        </nav>
+    </div>
+    <header>
+
+        <h2 class="title">
+            <span class="title__letters">C</span>
+            <span class="title__letters">o</span>
+            <span class="title__letters">n</span>
+            <span class="title__letters">t</span>
+            <span class="title__letters">a</span>
+            <span class="title__letters">c</span>
+            <span class="title__letters">t</span>
+  
+
+        </h2>
+
+     
+    </header>
+   </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CustomEase.min.js" defer></script>
+    <script src="https://unpkg.com/split-type" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <script>
+        const buttons = document.querySelectorAll(".btn");
+
+        buttons.forEach(btn => {
+            btn.addEventListener("mouseover", (e) => {
+                console.log("Mouseover event triggered");
+                let parent = btn.getBoundingClientRect();
+                let relX = e.clientX - parent.left;
+                let relY = e.clientY - parent.top;
+                console.log("Relative coordinates:", relX, relY);
+                const fill = btn.querySelector(".fillspan");
+                fill.style.top = relY + "px";
+                fill.style.left = relX + "px";
+            });
+        });
+    </script>
+
+</html>
