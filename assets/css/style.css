@@ -62,7 +62,7 @@ body {
 
 ::selection {
 
-  color: var(--color_accent);
+  color: yellow;
 }
 
 
@@ -175,18 +175,7 @@ button .nav__link:hover {
 
 
 
-.transition {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--clr_dark);
-  pointer-events: none;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  -webkit-transform: scaleY(0);
-  transform: scaleY(0);
-}
+
 
 
 /* --------------------------------------------------------------------- */
@@ -392,7 +381,7 @@ header {
   color: var(--clr_light);
   top: 3rem;
   left: 3rem;
-  z-index: 99;
+  z-index: 9;
   font-size: 1rem;
 }
 
@@ -414,7 +403,7 @@ header {
   position: absolute;
   bottom: 3rem;
   right: 6rem;
-  z-index: 99;
+  z-index: 9;
   transform: scale(1.5);
 
 }
@@ -546,7 +535,7 @@ header {
   line-height: 125.5%;
   color: var(--clr_light);
   font-size: 2rem;
-  z-index: 99;
+  z-index: 9;
   text-wrap: balance;
 }
 
@@ -555,15 +544,15 @@ header {
   bottom: 6rem;
   padding-inline: 2rem;
   color: var(--clr_mid);
-  z-index: 99;
+  z-index: 9;
   font-size: 1.5rem;
-  line-height: 125.5%;
+  line-height: 155.5%;
   text-wrap: balance;
 }
 
 .num {
   position: absolute;
-  z-index: 999;
+  z-index: 9;
   top: 3rem;
   left: 0rem;
   font-size: 1rem !important;
@@ -737,7 +726,7 @@ details[open] summary {
 
 .cta .btn {
   position: absolute;
-  z-index: 999999;
+  z-index: 999;
   top: 59%;
   left: 3rem;
   background-color: var(--clr_light);
@@ -755,7 +744,7 @@ details[open] summary {
   position: absolute;
   left: 16%;
   top: 59.5%;
-  z-index: 9999;
+  z-index: 999;
   display: flex;
   flex-direction: row;
   gap: 3rem;
@@ -778,7 +767,7 @@ details[open] summary {
   position: absolute;
   right: 3rem;
   bottom: 2.5rem;
-  z-index: 9999;
+  z-index: 99;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -801,7 +790,7 @@ details[open] summary {
   position: absolute;
   left: 3rem;
   bottom: 3rem;
-  z-index: 9999;
+  z-index: 99;
   color: var(--clr_mid1);
   font-size: 1rem;
 }
@@ -934,6 +923,21 @@ details[open] summary {
 
   }
 
+  .cta .overlay {
+
+    opacity: 75%;
+  }
+  .overlay {
+
+    opacity: 0.65;
+
+  }
+  ::selection {
+
+    color: lightsalmon;
+  }
+  
+  
 }
 
 
