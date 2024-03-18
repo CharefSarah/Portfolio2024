@@ -9,8 +9,7 @@
 html,
 body {
 
-  background: var(--clr_light);
-  color: var(--clr_dark);
+
   font-weight: 300;
   font-size: 14px;
   overflow-x: hidden;
